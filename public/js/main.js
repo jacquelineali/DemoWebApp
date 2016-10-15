@@ -1,5 +1,5 @@
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = "NEWWW PARAGRAPH #javascript #swag";
+  document.getElementById("demo").innerHTML = "A HAPPY 2-YEAR ANNIVERSARY! <3";
 }
 
