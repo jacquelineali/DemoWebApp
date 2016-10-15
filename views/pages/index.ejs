@@ -3,6 +3,8 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
+  <script>var apiKey = '<%= process.env.API_KEY %>';</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/js/main.js"></script>
 </head>
 
@@ -15,8 +17,22 @@
   </p>
 
   <button type="button" onclick="myFunction()">
-    Try it
+    Click here!
   </button>
+
+  <br>
+  <br>
+  <p>Get the exchange rate from U.S. Dollars to any currency!</p>
+  <form id="currency_form" onsubmit="currFormSubmit()">
+  	<input type="text" name="Currency:">
+  	<input type="submit" value="Submit">
+  </form>
+
+  <div class="curr1"></div>
+  <div class="curr2"></div>
+  <div class="xchgRate"></div>
+  
+  
 
 </body>
 
